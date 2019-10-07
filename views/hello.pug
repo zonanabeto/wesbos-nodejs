@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    div.wrapper
+        p.hello Hello !!! My dog name is #{dog} 
+        span#yo Yo!!
+        img(src="", alt=`dog ${dog}`, srcset="")
+
+    h2 Hello
+        em Time is #{h.moment().format('MMMM Do YYYY, h:mm:ss a')}
