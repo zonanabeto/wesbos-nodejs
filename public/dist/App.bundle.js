@@ -994,7 +994,6 @@ function typeAhead(search) {
         var activeClass = 'search__result--active';
         var current = search.querySelector('.' + activeClass);
         var items = search.querySelectorAll('.search__result');
-
         var next = void 0;
 
         if (e.keyCode === 40 && current) {

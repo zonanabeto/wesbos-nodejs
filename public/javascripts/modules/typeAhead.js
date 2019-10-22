@@ -27,6 +27,7 @@ function typeAhead(search){
         }
         searchResults.style.display   = 'block';
 
+
         axios
             .get(`/api/search?q=${this.value}`)
             .then(res => {
@@ -51,7 +52,6 @@ function typeAhead(search){
         const activeClass = 'search__result--active';
         const current = search.querySelector(`.${activeClass}`);
         const items = search.querySelectorAll('.search__result');
-
         let next;
         
 
